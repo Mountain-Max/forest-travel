@@ -5,21 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <title>Forest Travel</title>
 
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media.css">
 
-    <!--* Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/fav-icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/fav-icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/fav-icons/favicon-16x16.png">
-    <link rel="manifest" href="/img/fav-icons/site.webmanifest">
-    <link rel="shortcut icon" href="/img/fav-icons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/img/fav-icons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <!--* Favicon //-->
+  <!--* Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/fav-icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/fav-icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/fav-icons/favicon-16x16.png">
+  <link rel="manifest" href="/img/fav-icons/site.webmanifest">
+  <link rel="shortcut icon" href="/img/fav-icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/img/fav-icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <!--* Favicon //-->
 
 </head>
 
@@ -41,6 +42,9 @@
           <li class="header-nav-ithem"><a class="header-nav-link" href="./contacts.html">Контакты</a></li>
         </ul>
       </nav>
+      <button class="header-nav-btn">
+        <img src="./img/svg/menu.svg" alt="Menu button">
+      </button>
     </div>
   </header>
   <!--todo Header end -->
@@ -61,7 +65,13 @@
         <div class="cards-row">
           <!-- Card-1 -->
           <a href="#!" class="card-link-wrapper card">
-            <img src="./img/card-tours-img/card-tour-01.jpg" alt="Бесплатные туры">
+
+            <picture>
+              <source srcset="./img/card-tours-img/013.jpg" media="(max-width: 599px)">
+              <source srcset="./img/card-tours-img/012.jpg" media="(max-width: 899px)">
+              <source srcset="./img/card-tours-img/011.jpg" media="(max-width: 1199px)">
+              <img src="./img/card-tours-img/card-tour-01.jpg" alt="Бесплатные туры">
+            </picture>
 
             <div class="card-title-wrapper">
               <h2 class="card-title-tours">
@@ -71,7 +81,13 @@
           </a>
           <!-- Card-2 -->
           <a href="#!" class="card-link-wrapper card">
-            <img src="./img/card-tours-img/card-tour-02.jpg" alt="Экстремальный отдых">
+
+            <picture>
+              <source srcset="./img/card-tours-img/023.jpg" media="(max-width: 599px)">
+              <source srcset="./img/card-tours-img/022.jpg" media="(max-width: 899px)">
+              <source srcset="./img/card-tours-img/021.jpg" media="(max-width: 1199px)">
+              <img src="./img/card-tours-img/card-tour-02.jpg" alt="Экстремальный отдых">
+            </picture>
 
             <div class="card-title-wrapper extreme-color">
               <h2 class="card-title-tours">
@@ -86,7 +102,13 @@
           <!-- Card-3 -->
           <div class="card-column">
             <a href="#!" class="card-link-wrapper card bigger">
-              <img src="./img/card-tours-img/card-tour-03.jpg" alt="Невероятные приключения">
+
+              <picture>
+                <source srcset="./img/card-tours-img/033.jpg" media="(max-width: 599px)">
+                <source srcset="./img/card-tours-img/032.jpg" media="(max-width: 899px)">
+                <source srcset="./img/card-tours-img/031.jpg" media="(max-width: 1199px)">
+                <img src="./img/card-tours-img/card-tour-03.jpg" alt="Невероятные приключения">
+              </picture>
 
               <div class="card-title-wrapper adventures-color">
                 <h2 class="card-title-tours">
@@ -96,7 +118,13 @@
             </a>
             <!-- Card-4 -->
             <a href="./tracking.html" class="card-link-wrapper card bigger">
-              <img src="./img/card-tours-img/card-tour-04.jpg" alt="Трекинг походы">
+
+              <picture>
+                <source srcset="./img/card-tours-img/043.jpg" media="(max-width: 599px)">
+                <source srcset="./img/card-tours-img/042.jpg" media="(max-width: 899px)">
+                <source srcset="./img/card-tours-img/041.jpg" media="(max-width: 1199px)">
+                <img src="./img/card-tours-img/card-tour-04.jpg" alt="Трекинг походы">
+              </picture>
 
               <div class="card-title-wrapper tracking-color">
                 <h3 class="card-title-tours">
@@ -108,7 +136,13 @@
 
           <!-- Card-5 -->
           <a href="#!" class="card-link-wrapper card small">
-            <img src="./img/card-tours-img/card-tour-05.jpg" alt="Экзотические джунгли">
+
+            <picture>
+              <source srcset="./img/card-tours-img/053.jpg" media="(max-width: 599px)">
+              <source srcset="./img/card-tours-img/052.jpg" media="(max-width: 899px)">
+              <source srcset="./img/card-tours-img/051.jpg" media="(max-width: 1199px)">
+              <img src="./img/card-tours-img/card-tour-05.jpg" alt="Экзотические джунгли">
+            </picture>
 
             <div class="card-title-wrapper exotics-color">
               <h2 class="card-title-tours">
@@ -123,7 +157,7 @@
     </div>
   </main>
   <!--todo Main end  -->
-  
+
 
   <!--todo Footer start -->
 

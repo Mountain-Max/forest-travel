@@ -502,10 +502,6 @@ label {
   font-size: 18px;
 }
 
-.article-page-article p {
-  margin-bottom: 16px;
-}
-
 .article-page-article > *:last-child {
   margin-bottom: 0;
 }
@@ -517,8 +513,8 @@ label {
 }
 
 .article-page-article img {
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* Contacts page */
@@ -805,4 +801,7 @@ ul.ui-list a {
   color: #138ece;
 }
 
-
+.map {
+  width: 475px; 
+  height: 345px; 
+}
