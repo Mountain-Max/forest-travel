@@ -1,0 +1,108 @@
+/* Мобильная навигация */
+
+.nav-mobil {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+  background-color: #31405b;
+  z-index: 99;
+
+  display: none;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-mobil.nav-mobil--active {
+  display: flex;
+}
+
+.nav-mobil-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+}
+
+.nav-mobil-list li a {
+  color: #fff;
+}
+
+.nav-mobil-list li + li {
+  margin-top: 30px;
+}
+
+/* Мобильная навигация // */
+
+/* Иконка мобильной навигации */
+.nav-icon {
+  width: 30px;
+  height: 25px;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-icon-middle {
+  position: relative;
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.nav-icon-middle::before {
+  content: "";
+  
+  position: absolute;
+  top: -10px;
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: transform 0.2s ease-in, top 0,2s linear 0,2s ;
+}
+
+.nav-icon-middle::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: transform 0.2s ease-in, top 0,2s linear 0,2s ;
+}
+
+.nav-icon.nav-icon--active {
+  position: fixed;
+  top: 55px;
+  right: 15px;
+}
+
+.nav-icon-middle.nav-icon--active {
+  background-color: transparent;
+  z-index: 99;
+}
+
+.nav-icon-middle.nav-icon--active::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 0,2s linear, transform 0,2s ease-in 0,2s ;
+}
+
+.nav-icon-middle.nav-icon--active::after {
+  top: 0;
+  transform: rotate(-45deg);
+  transition: top 0,2s linear, transform 0,2s ease-in 0,2s ;
+}
+
+/* Иконка мобильной навигации // */

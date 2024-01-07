@@ -39,6 +39,11 @@
     height: 591px;
   }
 
+  /* Мобильная навигация */
+  .nav-icon {
+    display: flex !important;
+  }
+
   /* Main */
   .main {
     padding: 80px 0;
