@@ -67,7 +67,7 @@
   height: 5px;
   background-color: #fff;
   border-radius: 2px;
-  transition: transform 0.2s ease-in, top 0,2s linear 0,2s ;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
 .nav-icon-middle::after {
@@ -79,30 +79,32 @@
   height: 5px;
   background-color: #fff;
   border-radius: 2px;
-  transition: transform 0.2s ease-in, top 0,2s linear 0,2s ;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
+/* Активное состояние */
 .nav-icon.nav-icon--active {
   position: fixed;
-  top: 55px;
+  z-index: 99;
   right: 15px;
+  top: 60px;
 }
 
-.nav-icon-middle.nav-icon--active {
+.nav-icon-middle.nav-icon-middle--active {
   background-color: transparent;
   z-index: 99;
 }
 
-.nav-icon-middle.nav-icon--active::before {
+.nav-icon-middle.nav-icon-middle--active::before {
   top: 0;
   transform: rotate(45deg);
-  transition: top 0,2s linear, transform 0,2s ease-in 0,2s ;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
-.nav-icon-middle.nav-icon--active::after {
+.nav-icon-middle.nav-icon-middle--active::after {
   top: 0;
   transform: rotate(-45deg);
-  transition: top 0,2s linear, transform 0,2s ease-in 0,2s ;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
 /* Иконка мобильной навигации // */
