@@ -6,6 +6,10 @@
   }
 
   /* Header */
+  .header {
+    padding-top: 25px;
+  }
+
   .header-content {
     width: 900px;
     padding: 0 15px;
@@ -420,6 +424,18 @@
     font-size: 18px;
   }
 
+  .ui {
+    padding: 20px 0;
+  }
+
+  .ui-header {
+    font-size: 30px;
+  }
+
+  .ui-header-2 {
+    font-size: 25px;
+  }
+
   .main {
     padding: 40px 0;
   }
@@ -579,6 +595,11 @@
   }
 
   .cards-row {
+    row-gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-column {
     row-gap: 20px;
   }
 
